@@ -1,55 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Description</title>
+ <link> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    /* Reset basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #000000;
+    }
 
-<!doctype HTML>
-  <html>
-  <head> <span class="head"> FlavCity Vanilla Protein Smoothie </span><br>
-    <title></title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-     <style type="text/css">
-       body{
-           font-family: 'Montserrat', sans-serif;
-           font-weight:300;
-           font-size: 15px;
-       }
+    /* Body style */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
 
-      .subhead{
-      	color:#4682B4;
-      	font-size:18px;
-      	font-weight: bold;
-		}
-     
-      .head{
-      	color:#5F9EA0 ;
-      	font-size:30px;
-      	font-weight:600;
-      	font-family:'Quicksand' , sans-serif;
+    /* Product container style */
+    .product-container {
+      background-color: #000000;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
 
-      }
-      </style>
+    /* Product title style */
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-bottom: 15px;
+      font-family: "Abril Fatface" , serif;
+    }
 
+    /* Product description text */
+    .description-text {
+      font-size: 1.1rem;
+      color: #3bcbf5;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
 
-    </head>
+    /* Product features style */
+    .product-features {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
 
-     <body>
+    .product-features li {
+      font-size: 1.1rem;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      padding-left: 1.5rem;
+      position: relative;
+    }
 
-	<p><span class="subhead"> DITCH THE BLENDER:</span> <br>
-	<i> FlavCity’s Vanilla Protein Smoothie </i> is a delicious and nutrient-dense powder blend of vanilla bean and coconut milk. We’ve simplified the smoothie-making process by incorporating all the high-quality ingredients you love in each scoop — no add-ins needed! With <b>25g of protein </b> per serving, our complete protein smoothies are sure to be your new go-to post-workout beverage or snack. 20 servings.
-	</p> 
-	
-	<p><span class="subhead"> TOTAL BODY NOURISHMENT:</span> <br> Formulated with <i>non-GMO, minimally processed, and grass-fed, undenatured whey protein, collagen, and added amino acids. </i> Grass-fed bovine collagen peptides (10g per serving) provide extra protein and joint support. Reishi and Cordyceps mushrooms can help increase focus and cognition.</p>
+    .product-features li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+    }
 
-	<p><span class="subhead"> JUST ONE SCOOP:</span> <br> We want to make nutrition work for those with busy lifestyles, so we developed Protein Smoothies that are easy to make. Just add one scoop of your favorite flavor to 12 oz of your milk of choice, shake for 20 seconds, and enjoy.
-	</p> 
+    /* Buy button style */
+    .buy-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e165f7;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
 
-	<p> <span class="subhead"> I’D SCOOP THAT:</span> <br>
-	 Feel good about what you put in your body. Our Protein Smoothies are derived from delicious whole foods designed to enhance your health journey. Each ingredient has been thoroughly researched and every product has passed stringent quality control measures to provide you with peace of mind. If it’s “Bobby Approved,” you know you’re in good hands.
-	</p> 
+    .buy-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
 
-	<p> <span class="subhead"> ABOUT US: </span> <br> Since 2012, <i>Bobby Parrish</i> has amassed a following of more than <b>12 million community members</b> by creating online food and wellness content and authoring popular cookbooks. His mission is to help people know exactly what they put in their bodies so they can thrive.
-	</p> 
+  <div class="product-container">
+    <h1 class="product-title">Woolite Darks Defense Detergent</h1>
+    
+    <div class="product-description">
+      <p class="description-text">
+        Woolite Darks Defense is a first of its kind formula that keeps your clothes looking like new for up to 20 washes, even synthetics and blends. It protects your clothes from fading, pilling, for up to 20 washes and stretching for up to 6 washes. Woolite Darks Defense is perfect for all of your dark clothes, including your favorite jeans, leggings, and go-to blouse. It effectively cleans without the harshness. Woolite Darks Defense is free from optical brighteners, phosphates, and bleach.
+      </p>
+      
+      <ul class="product-features">
+        <li>Feature 1: Protects clothes from fading color</li>
+        <li>Feature 2: Keeps clothes looking like new</li>
+        <li>Feature 3: Effectively cleans</li>
+      </ul>
+      
+      <a href="https://www.amazon.com/Woolite-Laundry-Detergent-Regular-Washers/dp/B004S6C0I2?pd_rd_w=ZVBTc&content-id=amzn1.sym.1678c12e-53eb-4c60-acea-b83a297fc82d&pf_rd_p=1678c12e-53eb-4c60-acea-b83a297fc82d&pf_rd_r=KKMW7TZZQ2DSPV900AAC&pd_rd_wg=BEsf5&pd_rd_r=c6eacc7f-b716-4eb3-8e77-3619a2c75a38&pd_rd_i=B004S6C0I2&ref_=pd_bap_d_grid_rp_0_1_ec_b2b_gw_d_cbia_i&th=1" class="buy-button">Buy Now</a>
+    </div>
+  </div>
 
-
-
-    </body>
+</body>
 </html>
-
